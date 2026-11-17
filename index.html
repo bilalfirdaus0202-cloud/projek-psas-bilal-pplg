@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cirebon Rattan Heritage | Bisnis Ekspor Rotan Pak Ridwan</title>
+  <meta name="description" content="Website resmi publikasi bisnis ekspor rotan Cirebon Pak Ridwan. Cek ketersediaan ready stock, varian anyaman, kalkulator total harga, biaya pengiriman internasional, dan estimasi waktu sampai.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rattan: {
+              50: '#FDFBF7',
+              100: '#F7F2E8',
+              200: '#EBDDC5',
+              300: '#DFC49F',
+              400: '#D2A877',
+              500: '#C2894D',
+              600: '#B45309', // Primary Wood
+              700: '#92400E',
+              800: '#78350F', // Primary Deep
+              900: '#52250A',
+              950: '#321404',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-rattan-50 text-slate-800 antialiased selection:bg-amber-200 selection:text-amber-900">
+
+  <!-- Top Notification & Currency Bar -->
+  <div class="bg-rattan-950 text-amber-100 text-xs py-2 px-4 border-b border-rattan-900">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">
+          PROJEK ASAS PPLG
+        </span>
+        <span class="hidden sm:inline text-amber-200/80">|</span>
+        <span class="truncate">📍 Pabrik Sentra Rotan Cirebon ➔ Rute Prioritas Ekspor Malaysia (Port Klang, Penang & Johor)</span>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <!-- Live Jadwal Pelayaran Feeder -->
+        <div class="hidden md:flex items-center gap-1.5 text-[11px] text-amber-200/70">
+          <i data-lucide="anchor" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Next Sailing Priok ➔ Port Klang: <strong>Jumat Minggu Ini (3-5 Hari Tiba)</strong></span>
+        </div>
+
+        <!-- Currency Selector -->
+        <div class="flex items-center gap-1 bg-rattan-900/90 rounded-lg p-0.5 border border-rattan-800">
+          <span class="text-[10px] px-1.5 text-amber-300/70 font-semibold">Mata Uang:</span>
+          <button data-currency="USD" class="currency-toggle-btn px-2 py-0.5 rounded text-[11px] font-bold transition bg-amber-800 text-white">
+            USD ($)
+          </button>
+          <button data-currency="IDR" class="currency-toggle-btn px-2 py-0.5 rounded text-[11px] font-bold transition text-amber-200/70 hover:text-white">
+            IDR (Rp)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header id="main-nav" class="sticky top-0 z-40 transition-all duration-300 bg-rattan-50/95 backdrop-blur-md border-b border-amber-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-700 to-amber-950 flex items-center justify-center text-amber-200 shadow-md group-hover:shadow-amber-900/20 transition">
+            <i data-lucide="palmtree" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-serif-luxury font-bold text-lg sm:text-xl text-rattan-950 tracking-tight">Cirebon Rattan</span>
+              <span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-amber-200/80 text-amber-900">Export</span>
+            </div>
+            <p class="text-[11px] text-gray-500 font-medium">CV. Ridwan Rattan Nusantara</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-700">
+          <a href="#profil" class="hover:text-amber-800 transition">Publikasi Bisnis</a>
+          <a href="#katalog" class="hover:text-amber-800 transition flex items-center gap-1">
+            Katalog & Varian
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          </a>
+          <a href="#kalkulator" class="hover:text-amber-800 transition flex items-center gap-1">
+            <i data-lucide="calculator" class="w-4 h-4 text-amber-700"></i>
+            Kalkulator & Ongkir
+          </a>
+          <a href="#estimasi-info" class="hover:text-amber-800 transition">Estimasi Sampai (ETA)</a>
+          <a href="#faq" class="hover:text-amber-800 transition">FAQ Klien</a>
+        </nav>
+
+        <!-- Right Action Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#kalkulator" class="px-4 py-2.5 bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-700 hover:to-amber-800 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg transition flex items-center gap-2">
+            <i data-lucide="file-spreadsheet" class="w-4 h-4"></i>
+            Simulasi Proforma Invoice
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-amber-800">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-amber-200/60 bg-white px-4 pt-3 pb-6 space-y-3 text-sm font-semibold text-gray-800 shadow-xl">
+      <a href="#profil" class="block py-2 hover:text-amber-800 border-b border-gray-100">Publikasi Bisnis Pak Ridwan</a>
+      <a href="#katalog" class="block py-2 hover:text-amber-800 border-b border-gray-100">Katalog Produk & Ketersediaan Stok</a>
+      <a href="#kalkulator" class="block py-2 hover:text-amber-800 border-b border-gray-100">Kalkulator Total Harga & Biaya Kirim</a>
+      <a href="#estimasi-info" class="block py-2 hover:text-amber-800 border-b border-gray-100">Estimasi Waktu Sampai (ETA)</a>
+      <a href="#faq" class="block py-2 hover:text-amber-800 border-b border-gray-100">Tanya Jawab Seputar Ekspor (FAQ)</a>
+      <div class="pt-2">
+        <a href="#kalkulator" class="w-full py-3 bg-amber-800 text-white rounded-xl text-center font-bold block shadow">
+          Buka Kalkulator Ekspor
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative overflow-hidden pt-10 pb-16 lg:py-24 bg-rattan-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-900 text-xs font-bold shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-600 animate-pulse"></span>
+            Eksportir Mebel Rotan Cirebon Terpercaya • Spesialis Ekspor ke Malaysia
+          </div>
+
+          <h1 class="font-serif-luxury text-3xl sm:text-5xl lg:text-6xl text-amber-950 font-black leading-[1.15] tracking-tight">
+            Karya Anyaman Rotan Cirebon Berkelas Dunia, <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-900">Spesialis Ekspor ke Malaysia & Pasar Global.</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-gray-600 max-w-xl leading-relaxed">
+            Selamat datang di media publikasi bisnis <strong>Pak Ridwan</strong>. Dapatkan kepastian ketersediaan stok <em>(ready stock & pre-order)</em>, eksplorasi varian anyaman, dan kalkulasi instan total harga beserta biaya pengiriman laut ke <strong>Malaysia (Port Klang, Penang, Johor)</strong> dengan fasilitas <strong>ATIGA Form D (Bea Masuk 0%)</strong> serta pengiriman ke seluruh dunia.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#katalog" class="px-6 py-3.5 bg-amber-800 hover:bg-amber-900 text-white rounded-xl text-sm font-bold shadow-lg hover:shadow-xl transition flex items-center gap-2">
+              <i data-lucide="package-check" class="w-4 h-4 text-amber-300"></i>
+              Lihat Produk & Stok Ready
+            </a>
+            <a href="#kalkulator" class="px-6 py-3.5 bg-white hover:bg-amber-50 text-amber-900 border-2 border-amber-800/80 rounded-xl text-sm font-bold shadow-sm transition flex items-center gap-2">
+              <i data-lucide="calculator" class="w-4 h-4 text-amber-700"></i>
+              Hitung Harga & Kirim ke Malaysia
+            </a>
+          </div>
+
+          <!-- Key Metrics -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-amber-200/80">
+            <div>
+              <span class="block font-black text-2xl text-amber-950 font-serif-luxury">15+ Th</span>
+              <span class="text-xs text-gray-500 font-medium">Pengalaman Ekspor</span>
+            </div>
+            <div>
+              <span class="block font-black text-2xl text-amber-950 font-serif-luxury">20 HC</span>
+              <span class="text-xs text-gray-500 font-medium">Kapasitas/Bulan</span>
+            </div>
+            <div>
+              <span class="block font-black text-2xl text-amber-950 font-serif-luxury">🇲🇾 0%</span>
+              <span class="text-xs text-gray-500 font-medium">Duti ATIGA Form D</span>
+            </div>
+            <div>
+              <span class="block font-black text-2xl text-emerald-700 font-serif-luxury">3-5 H</span>
+              <span class="text-xs text-gray-500 font-medium">Transit Port Klang</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <!-- Background Decorative Glow -->
+            <div class="absolute -inset-4 bg-gradient-to-r from-amber-400/20 to-orange-400/20 rounded-3xl blur-2xl -z-10"></div>
+            
+            <div class="bg-white rounded-3xl border-2 border-amber-200 shadow-2xl p-4 sm:p-6 overflow-hidden">
+              <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Pak Ridwan Rattan Workshop" class="w-full h-full object-cover">
+                
+                <div class="absolute top-3 left-3 bg-emerald-600/90 text-white text-[11px] font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center gap-1.5 shadow">
+                  <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+                  Gudang Tegalwangi Buka Hari Ini
+                </div>
+
+                <div class="absolute bottom-3 right-3 bg-black/70 text-white text-[11px] font-semibold px-3 py-1 rounded-lg backdrop-blur-sm">
+                  Cirebon Rattan Mastercraft
+                </div>
+              </div>
+
+              <!-- Quick Highlight Badge Bar -->
+              <div class="bg-amber-50 rounded-xl p-3.5 border border-amber-100 space-y-2 text-xs">
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-600 font-medium">Ketersediaan Model Unggulan:</span>
+                  <span class="text-emerald-700 font-bold">142 Unit Ready Kirim</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-600 font-medium">Estimasi Transit ke Port Klang:</span>
+                  <span class="text-amber-900 font-bold">3 - 5 Hari (Express)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-600 font-medium">Sertifikasi & Bea Masuk:</span>
+                  <span class="text-gray-800 font-bold">Form D (0%) & MAQIS</span>
+                </div>
+              </div>
+
+              <div class="mt-4 flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Pak Ridwan" class="w-11 h-11 rounded-full object-cover border-2 border-amber-600">
+                <div>
+                  <h4 class="font-bold text-xs text-gray-900">Pak H. Ridwan Mansyur, S.T.</h4>
+                  <p class="text-[11px] text-gray-500">Pemilik & Managing Director Ekspor</p>
+                </div>
+                <a href="#profil" class="ml-auto text-xs font-bold text-amber-800 hover:text-amber-950 flex items-center gap-1">
+                  Profil Bisnis <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ANSWERS HIGHLIGHT BANNER (Solusi Cepat 5 Kendala Calon Klien) -->
+  <section class="bg-gradient-to-r from-amber-900 via-amber-950 to-amber-900 text-white py-8 border-y-2 border-amber-700/50 shadow-inner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-6">
+        <span class="text-amber-400 text-xs font-extrabold uppercase tracking-widest block mb-1">PUSAT SOLUSI PERTANYAAN CALON KLIEN</span>
+        <h2 class="text-xl sm:text-2xl font-bold font-serif-luxury">Jawaban Cepat 5 Hal yang Sering Ditanyakan ke Pak Ridwan</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- 1. Ketersediaan Produk -->
+        <a href="#katalog" class="p-4 rounded-xl bg-white/10 hover:bg-white/15 border border-amber-500/30 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-2.5">
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+            </div>
+            <h3 class="font-bold text-xs text-amber-200 mb-1">1. Ketersediaan Produk?</h3>
+            <p class="text-[11px] text-gray-300 leading-snug">
+              Ada stok <strong>Ready Stock</strong> siap kirim (1-3 hari) & <strong>Pre-Order</strong> produksi (10-21 hari).
+            </p>
+          </div>
+          <span class="text-[10px] text-emerald-400 font-semibold mt-3 flex items-center gap-1 group-hover:underline">
+            Cek Status Stok <i data-lucide="chevron-right" class="w-3 h-3"></i>
+          </span>
+        </a>
+
+        <!-- 2. Varian Produk -->
+        <a href="#katalog" class="p-4 rounded-xl bg-white/10 hover:bg-white/15 border border-amber-500/30 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center mb-2.5">
+              <i data-lucide="palette" class="w-4 h-4"></i>
+            </div>
+            <h3 class="font-bold text-xs text-amber-200 mb-1">2. Varian Produk?</h3>
+            <p class="text-[11px] text-gray-300 leading-snug">
+              Tersedia 4 pilihan finishing warna, anyaman natural / sintetis PE, dan bantalan Sunbrella®.
+            </p>
+          </div>
+          <span class="text-[10px] text-amber-300 font-semibold mt-3 flex items-center gap-1 group-hover:underline">
+            Eksplor Varian <i data-lucide="chevron-right" class="w-3 h-3"></i>
+          </span>
+        </a>
+
+        <!-- 3. Total Harga -->
+        <a href="#kalkulator" class="p-4 rounded-xl bg-white/10 hover:bg-white/15 border border-amber-500/30 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center mb-2.5">
+              <i data-lucide="calculator" class="w-4 h-4"></i>
+            </div>
+            <h3 class="font-bold text-xs text-amber-200 mb-1">3. Berapa Total Harga?</h3>
+            <p class="text-[11px] text-gray-300 leading-snug">
+              Hitung otomatis dengan kalkulator interaktif lengkap diskon grosir kontainer s.d 18%.
+            </p>
+          </div>
+          <span class="text-[10px] text-blue-300 font-semibold mt-3 flex items-center gap-1 group-hover:underline">
+            Buka Kalkulator <i data-lucide="chevron-right" class="w-3 h-3"></i>
+          </span>
+        </a>
+
+        <!-- 4. Biaya Pengiriman -->
+        <a href="#kalkulator" class="p-4 rounded-xl bg-white/10 hover:bg-white/15 border border-amber-500/30 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center mb-2.5">
+              <i data-lucide="ship" class="w-4 h-4"></i>
+            </div>
+            <h3 class="font-bold text-xs text-amber-200 mb-1">4. Biaya Pengiriman?</h3>
+            <p class="text-[11px] text-gray-300 leading-snug">
+              Mulai <strong>$32/CBM (RM 145)</strong> ke Port Klang, FCL 20ft $580, atau FCL 40ft $980.
+            </p>
+          </div>
+          <span class="text-[10px] text-orange-300 font-semibold mt-3 flex items-center gap-1 group-hover:underline">
+            Simulasi Ongkir Malaysia <i data-lucide="chevron-right" class="w-3 h-3"></i>
+          </span>
+        </a>
+
+        <!-- 5. Estimasi Sampai -->
+        <a href="#estimasi-info" class="p-4 rounded-xl bg-white/10 hover:bg-white/15 border border-amber-500/30 transition group flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center mb-2.5">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+            </div>
+            <h3 class="font-bold text-xs text-amber-200 mb-1">5. Kapan Barang Sampai?</h3>
+            <p class="text-[11px] text-gray-300 leading-snug">
+              Sangat cepat! Hanya <strong>3 - 5 hari pelayaran</strong> via Selat Malaka ke Port Klang & Penang.
+            </p>
+          </div>
+          <span class="text-[10px] text-purple-300 font-semibold mt-3 flex items-center gap-1 group-hover:underline">
+            Cek Estimasi ETA Malaysia <i data-lucide="chevron-right" class="w-3 h-3"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR 1: PUBLIKASI BISNIS PAK RIDWAN -->
+  <section id="profil" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider">
+          Publikasi Bisnis Ekspor
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif-luxury text-amber-950 mt-3 mb-4">
+          Cirebon Rattan Heritage: Warisan Anyaman Rotan Bernilai Seni Tinggi
+        </h2>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Dipimpin oleh <strong>Pak H. Ridwan Mansyur, S.T.</strong>, kami beroperasi langsung dari jantung sentra industri rotan Desa Tegalwangi, Weru, Cirebon—wilayah yang memproses lebih dari 80% mebel rotan dunia dengan keahlian turun temurun.
+        </p>
+      </div>
+
+      <!-- Grid Profil & Workshop Showcase -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
+        
+        <!-- Story & Credentials (7 Cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="space-y-4 text-sm text-gray-700 leading-relaxed">
+            <p>
+              Bisnis ini didirikan pada tahun <strong>2008</strong> berawal dari kepedulian Pak Ridwan terhadap kelestarian tradisi anyaman Cirebon dan potensi pasar furnitur alami internasional. Berbekal sarjana teknik industri dan kemitraan dengan ratusan pengrajin maestro Tegalwangi, bisnis ini bertransformasi menjadi eksportir mebel berskala internasional.
+            </p>
+            <p>
+              Rotan yang kami gunakan adalah rotan manau, tohiti, dan mandola pilihan dari hutan Kalimantan dan Sulawesi yang dipanen secara lestari. Setiap batang diproses melalui pengeringan oven kiln dry (Moisture Content &lt; 12%), perlakuan anti-bubuk, pelengkungan uap suhu tinggi, hingga anyaman tangan presisi.
+            </p>
+          </div>
+
+          <!-- Keunggulan Pabrik & Workshop -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <i data-lucide="factory" class="w-5 h-5 text-amber-800"></i>
+                <h4 class="font-bold text-amber-950 text-sm">Fasilitas Pabrik 6.500 m²</h4>
+              </div>
+              <p class="text-xs text-gray-600">Gudang bahan baku, 4 ruang kiln dry berkapasitas 30 CBM, area perakitan, dan finishing booth modern.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <i data-lucide="container" class="w-5 h-5 text-amber-800"></i>
+                <h4 class="font-bold text-amber-950 text-sm">Kapasitas 15-20 Kontainer</h4>
+              </div>
+              <p class="text-xs text-gray-600">Sanggup memenuhi pesanan hotel, resort, distributor grosir, hingga retail internasional tepat waktu.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <i data-lucide="users" class="w-5 h-5 text-amber-800"></i>
+                <h4 class="font-bold text-amber-950 text-sm">120+ Pengrajin Maestro</h4>
+              </div>
+              <p class="text-xs text-gray-600">Diberdayakan secara adil (Fair Trade) menjamin kesejahteraan pengrajin lokal dan kualitas anyaman terbaik.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <i data-lucide="shield-check" class="w-5 h-5 text-amber-800"></i>
+                <h4 class="font-bold text-amber-950 text-sm">Garansi Mutu Ekspor</h4>
+              </div>
+              <p class="text-xs text-gray-600">Melewati 3 tahap Quality Control: dimensi struktur, kadar air kayu rotan, dan kerapian kemasan 5-ply.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Factory & Founder Card (5 Cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-lg relative group">
+            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=80" alt="Pengrajin Anyaman Cirebon" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-5 flex flex-col justify-end text-white">
+              <span class="text-amber-300 text-xs font-bold uppercase">Sentra Tegalwangi, Weru, Cirebon</span>
+              <h4 class="font-bold text-base">Ketelitian Anyaman Tangan Asli Cirebon</h4>
+              <p class="text-xs text-gray-300 mt-1">Setiap helai rotan dianyam dengan ketelatenan tinggi menghasilkan kekuatan konstruksi puluhan tahun.</p>
+            </div>
+          </div>
+
+          <!-- Contact Quick Card -->
+          <div class="p-5 rounded-2xl bg-amber-950 text-amber-50 space-y-3">
+            <div class="flex items-center justify-between border-b border-amber-800/80 pb-3">
+              <div>
+                <span class="text-[10px] text-amber-400 uppercase font-bold tracking-wider">Kantor Pemasaran & Showroom</span>
+                <h5 class="font-bold text-sm text-white">CV. Ridwan Rattan Nusantara</h5>
+              </div>
+              <span class="px-2 py-0.5 bg-emerald-500 text-white rounded text-[10px] font-bold">Terverifikasi</span>
+            </div>
+            <p class="text-xs text-amber-200/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 inline mr-1 text-amber-400"></i>
+              Jl. Raya Tegalwangi No. 88, Weru, Cirebon, Jawa Barat 45154
+            </p>
+            <p class="text-xs text-amber-200/80">
+              <i data-lucide="mail" class="w-3.5 h-3.5 inline mr-1 text-amber-400"></i>
+              export@cirebonrattan.id | Telp / WA: +62 812-3456-7890
+            </p>
+            <div class="pt-1 flex gap-2">
+              <a href="https://wa.me/6281234567890" target="_blank" class="flex-1 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg text-center transition flex items-center justify-center gap-1.5">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Hubungi Pak Ridwan
+              </a>
+              <a href="#katalog" class="px-3 py-2 bg-amber-800 hover:bg-amber-700 text-white text-xs font-semibold rounded-lg transition">
+                Katalog
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal Certifications Grid -->
+      <div class="border-t border-amber-200/80 pt-10">
+        <div class="text-center mb-8">
+          <span class="text-xs font-bold text-amber-800 uppercase tracking-widest">KEPATUHAN REGULASI EKSPOR INTERNASIONAL</span>
+          <h3 class="text-2xl font-bold font-serif-luxury text-amber-950 mt-1">Sertifikasi Resmi Pengiriman Luar Negeri</h3>
+          <p class="text-xs text-gray-500 mt-1">Menjamin pesanan Anda lolos uji bea cukai di seluruh negara tanpa risiko penolakan karantina.</p>
+        </div>
+
+        <div id="certifications-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FITUR 2 (Ketersediaan) & FITUR 3 (Varian): KATALOG PRODUK INTERAKTIF -->
+  <section id="katalog" class="py-20 bg-rattan-pattern border-t border-amber-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider">
+            Katalog Produk Ekspor
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-serif-luxury text-amber-950 mt-2">
+            Pilihan Produk, Ketersediaan Stok & Varian
+          </h2>
+          <p class="text-xs sm:text-sm text-gray-600 mt-1">
+            Lihat indikator stok hijau <strong>Ready Stock</strong> untuk pengiriman instan, atau pilih <strong>Pre-Order</strong> untuk kustomisasi khusus.
+          </p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative w-full md:w-80">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          <input type="text" id="catalog-search-input" placeholder="Cari nama, warna, atau varian..." class="w-full pl-10 pr-4 py-2.5 bg-white border border-amber-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-sm text-gray-800">
+        </div>
+      </div>
+
+      <!-- Filter Controls: Kategori & Status Ketersediaan -->
+      <div class="bg-white p-4 rounded-2xl border border-amber-200/80 shadow-sm mb-8 space-y-4">
+        
+        <!-- Category Filter Tabs -->
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="text-xs font-bold text-gray-700 mr-2">Kategori:</span>
+            <button data-category="all" class="cat-tab-btn tab-active px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-900 text-white transition">
+              Semua Koleksi
+            </button>
+            <button data-category="Living" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-600 hover:bg-amber-50 border border-gray-200 transition">
+              Kursi & Living
+            </button>
+            <button data-category="Dining" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-600 hover:bg-amber-50 border border-gray-200 transition">
+              Dining & Bar
+            </button>
+            <button data-category="Outdoor" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-600 hover:bg-amber-50 border border-gray-200 transition">
+              Daybed & Outdoor
+            </button>
+            <button data-category="Lighting" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-600 hover:bg-amber-50 border border-gray-200 transition">
+              Kap Lampu Anyam
+            </button>
+            <button data-category="Decor" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-600 hover:bg-amber-50 border border-gray-200 transition">
+              Keranjang & Dekorasi
+            </button>
+          </div>
+
+          <!-- Product Count Badge -->
+          <span id="catalog-count-badge" class="text-xs font-semibold text-amber-900 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            8 Produk Ditampilkan
+          </span>
+        </div>
+
+        <!-- Availability Filter (Fitur 2: Ketersediaan Produk) -->
+        <div class="flex items-center gap-2 pt-3 border-t border-gray-100 flex-wrap">
+          <span class="text-xs font-bold text-gray-700 mr-2">Filter Ketersediaan:</span>
+          <button data-avail="all" class="avail-filter-btn px-3 py-1 rounded-md text-xs font-bold bg-amber-700 text-white transition">
+            Semua Status
+          </button>
+          <button data-avail="ready" class="avail-filter-btn px-3 py-1 rounded-md text-xs font-semibold bg-emerald-50 text-emerald-900 hover:bg-emerald-100 border border-emerald-300 transition flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            Hanya Ready Stock (Siap Kirim Cepat)
+          </button>
+          <button data-avail="preorder" class="avail-filter-btn px-3 py-1 rounded-md text-xs font-semibold bg-amber-50 text-amber-900 hover:bg-amber-100 border border-amber-300 transition flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+            Hanya Pre-Order (Made-to-Order)
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Grid Katalog Produk (Rendered by app.js) -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Dynamic Cards -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FITUR 4 (Total Harga), FITUR 5 (Biaya Kirim), FITUR 6 (Estimasi Sampai / ETA): KALKULATOR EKSPOR -->
+  <section id="kalkulator" class="py-20 bg-white border-t border-amber-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider">
+          Fitur Interaktif Wajib 4, 5 & 6
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif-luxury text-amber-950 mt-2 mb-3">
+          Kalkulator Ekspor: Total Harga, Ongkir & Estimasi Sampai
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+          Simulasikan rencana pembelian Anda secara transparan. Sistem menghitung diskon volume grosir, biaya pelayaran kontainer/LCL, dokumen fumigasi, serta tanggal kalender perkiraan barang tiba di pelabuhan tujuan.
+        </p>
+
+        <!-- Quick Preset Test Buttons -->
+        <div class="flex items-center justify-center gap-2 mt-4 flex-wrap">
+          <span class="text-xs font-bold text-gray-500">Uji Cepat Simulasi:</span>
+          <button onclick="applyQuickPreset('sample')" class="px-3 py-1 bg-amber-50 hover:bg-amber-100 text-amber-900 rounded-lg text-xs font-semibold border border-amber-200 transition">
+            📦 Contoh Sampel (2 Unit)
+          </button>
+          <button onclick="applyQuickPreset('container20')" class="px-3 py-1 bg-amber-50 hover:bg-amber-100 text-amber-900 rounded-lg text-xs font-semibold border border-amber-200 transition">
+            🚢 Kontainer 20ft (70 Unit)
+          </button>
+          <button onclick="applyQuickPreset('container40')" class="px-3 py-1 bg-amber-50 hover:bg-amber-100 text-amber-900 rounded-lg text-xs font-semibold border border-amber-200 transition">
+            🏢 Kontainer 40ft HC (230 Unit)
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Calculator Card -->
+      <div class="bg-rattan-50 rounded-3xl border-2 border-amber-200/90 shadow-xl overflow-hidden p-6 sm:p-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Sisi Kiri: Daftar Barang Simulasi (7 Kolom) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="flex items-center justify-between pb-3 border-b border-amber-200">
+              <div class="flex items-center gap-2">
+                <i data-lucide="shopping-bag" class="w-5 h-5 text-amber-800"></i>
+                <h3 class="font-bold text-base text-gray-900">1. Daftar Produk yang Dipilih</h3>
+              </div>
+              <a href="#katalog" class="text-xs font-bold text-amber-800 hover:text-amber-950 flex items-center gap-1">
+                + Tambah Produk Lain
+              </a>
+            </div>
+
+            <!-- List Item Simulasi (Rendered by calculator.js) -->
+            <div id="calc-items-list" class="space-y-3 max-h-[420px] overflow-y-auto pr-1">
+              <!-- Dynamic Items -->
+            </div>
+
+            <!-- Parameter Pengiriman & Destinasi (Fitur 5: Biaya Pengiriman) -->
+            <div class="pt-4 border-t border-amber-200 space-y-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-5 h-5 text-amber-800"></i>
+                <h3 class="font-bold text-base text-gray-900">2. Pilih Negara & Pelabuhan Tujuan (Discharge Port)</h3>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Dropdown Destinasi -->
+                <div>
+                  <label class="block text-xs font-bold text-gray-700 mb-1.5">Pelabuhan / Negara Tujuan:</label>
+                  <select id="calc-destination-select" class="w-full p-2.5 bg-white border border-amber-300 rounded-xl text-xs font-semibold text-gray-800 focus:ring-2 focus:ring-amber-600 focus:outline-none shadow-sm">
+                    <!-- Populated by calculator.js -->
+                  </select>
+                </div>
+
+                <!-- Dropdown Moda Pengiriman -->
+                <div>
+                  <label class="block text-xs font-bold text-gray-700 mb-1.5">Moda Kargo Pengiriman:</label>
+                  <select id="calc-mode-select" class="w-full p-2.5 bg-white border border-amber-300 rounded-xl text-xs font-semibold text-gray-800 focus:ring-2 focus:ring-amber-600 focus:outline-none shadow-sm">
+                    <option value="auto">✨ Rekomendasi Otomatis (Berdasarkan CBM)</option>
+                    <option value="lcl">Sea Freight LCL (Konsolidasi per CBM)</option>
+                    <option value="fcl20">FCL 20ft Full Container (~30 CBM)</option>
+                    <option value="fcl40">FCL 40ft High Cube Container (~68 CBM)</option>
+                    <option value="air">Air Cargo Express (Khusus Sampel per Kg)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Incoterms Toggle -->
+              <div class="flex items-center justify-between bg-amber-100/60 p-3 rounded-xl border border-amber-200 text-xs">
+                <div>
+                  <span class="font-bold text-amber-950 block">Pilihan Ketentuan Perdagangan (Incoterms):</span>
+                  <span class="text-[11px] text-gray-600">CIF = Termasuk Ongkir Kapal & Asuransi | FOB = Muat di Pelabuhan Jakarta Saja</span>
+                </div>
+                <select id="calc-incoterm-select" class="p-1.5 bg-white border border-amber-300 rounded-lg text-xs font-bold text-amber-900">
+                  <option value="CIF">CIF (Termasuk Ongkir)</option>
+                  <option value="FOB">FOB (Hanya Muat Port IDJKT)</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Sisi Kanan: Output Kalkulasi Total Harga & Estimasi Sampai (5 Kolom) -->
+          <div class="lg:col-span-5 flex flex-col justify-between bg-white rounded-2xl border-2 border-amber-300 shadow-md p-6 space-y-6">
+            
+            <div>
+              <div class="flex items-center justify-between border-b border-gray-100 pb-3 mb-4">
+                <h4 class="font-bold text-base text-amber-950 font-serif-luxury">Ringkasan Biaya & Logistik</h4>
+                <span id="calc-incoterm-badge" class="px-2 py-0.5 bg-amber-100 text-amber-900 text-[10px] font-bold rounded">
+                  CIF Included
+                </span>
+              </div>
+
+              <!-- Kubikasi & Muatan Info -->
+              <div class="grid grid-cols-3 gap-2 p-3 bg-amber-50/70 rounded-xl border border-amber-200 text-center mb-4">
+                <div>
+                  <span class="text-[10px] text-gray-500 uppercase font-bold block">Total Unit</span>
+                  <span id="calc-summary-units" class="text-xs font-black text-amber-950 font-mono">0 Unit</span>
+                </div>
+                <div>
+                  <span class="text-[10px] text-gray-500 uppercase font-bold block">Total Volume</span>
+                  <span id="calc-summary-cbm" class="text-xs font-black text-amber-950 font-mono">0.00 CBM</span>
+                </div>
+                <div>
+                  <span class="text-[10px] text-gray-500 uppercase font-bold block">Total Berat</span>
+                  <span id="calc-summary-weight" class="text-xs font-black text-amber-950 font-mono">0.0 Kg</span>
+                </div>
+              </div>
+
+              <!-- FITUR 4: Rincian Total Harga & Diskon Grosir -->
+              <div class="space-y-2 text-xs border-b border-gray-100 pb-4 mb-4">
+                <div class="flex justify-between text-gray-600">
+                  <span>Subtotal Nilai Produk (Gross):</span>
+                  <span id="calc-gross-total" class="font-mono font-semibold">$0</span>
+                </div>
+
+                <div class="flex justify-between text-emerald-700 bg-emerald-50/80 px-2 py-1 rounded">
+                  <span id="calc-discount-tier">Diskon Grosir Ekspor:</span>
+                  <span id="calc-discount-val" class="font-mono font-bold">-$0</span>
+                </div>
+
+                <div class="flex justify-between text-gray-900 font-bold pt-1">
+                  <span>Harga Produk Bersih:</span>
+                  <span id="calc-net-products" class="font-mono">$0</span>
+                </div>
+              </div>
+
+              <!-- FITUR 5: Rincian Biaya Pengiriman (Shipping Cost) -->
+              <div class="space-y-2 text-xs border-b border-gray-100 pb-4 mb-4">
+                <div class="flex justify-between text-gray-600">
+                  <div>
+                    <span class="block">Biaya Freight (Ocean/Air Cargo):</span>
+                    <span id="calc-shipping-detail" class="text-[10px] text-gray-400 block">-</span>
+                  </div>
+                  <span id="calc-shipping-cost" class="font-mono font-semibold">$0</span>
+                </div>
+
+                <div class="flex justify-between text-gray-600">
+                  <div>
+                    <span>Sertifikat Fumigasi AFAS / ISPM 15:</span>
+                    <span class="text-[10px] text-emerald-600 block">Bebas Hama Kayu Internasional</span>
+                  </div>
+                  <span id="calc-fumigation-cost" class="font-mono font-semibold">$0</span>
+                </div>
+
+                <div class="flex justify-between text-gray-600">
+                  <span>Handling & Dokumen Legal SVLK:</span>
+                  <span id="calc-handling-cost" class="font-mono font-semibold">$0</span>
+                </div>
+              </div>
+
+              <!-- FITUR 6: Estimasi Waktu Sampai (ETA Breakdown) -->
+              <div class="p-4 bg-gradient-to-br from-amber-900 to-amber-950 text-amber-100 rounded-xl space-y-2 text-xs mb-4">
+                <div class="flex items-center justify-between border-b border-amber-800 pb-2">
+                  <span class="font-bold flex items-center gap-1.5 text-amber-200">
+                    <i data-lucide="clock" class="w-4 h-4 text-amber-400"></i> Estimasi Barang Tiba (ETA)
+                  </span>
+                  <span id="calc-eta-total-days" class="text-[11px] font-mono px-2 py-0.5 bg-amber-800 rounded font-bold">
+                    - Hari
+                  </span>
+                </div>
+
+                <div class="flex justify-between text-[11px] text-amber-200/80">
+                  <span>Lead Time Muat Pabrik Cirebon:</span>
+                  <span id="calc-eta-leadtime" class="font-bold text-white">- Hari</span>
+                </div>
+                <div class="flex justify-between text-[11px] text-amber-200/80">
+                  <span>Transit Pelayaran Kapal Laut:</span>
+                  <span id="calc-eta-transit" class="font-bold text-white">- Hari</span>
+                </div>
+                <div class="flex justify-between text-[11px] text-amber-200/80">
+                  <span>Pelabuhan Tujuan (Discharge):</span>
+                  <span id="calc-eta-port-dest" class="font-bold text-amber-300">-</span>
+                </div>
+
+                <div class="pt-2 border-t border-amber-800 flex items-center justify-between">
+                  <span class="text-xs font-bold text-amber-300">Perkiraan Tiba di Tujuan:</span>
+                  <span id="calc-eta-range" class="text-xs font-black text-emerald-400 font-mono">
+                    Menghitung...
+                  </span>
+                </div>
+              </div>
+
+              <!-- Grand Total Akhir -->
+              <div class="p-3.5 bg-amber-100/90 rounded-xl border border-amber-300 flex items-baseline justify-between">
+                <div>
+                  <span class="text-[10px] uppercase font-bold text-amber-900 block tracking-wider">Perkiraan Grand Total</span>
+                  <span class="text-xs text-amber-800/80">Semua Biaya Termasuk</span>
+                </div>
+                <div class="text-right">
+                  <span id="calc-grand-total" class="text-2xl font-black text-amber-950 font-serif-luxury font-mono">$0</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action Buttons: Print Invoice & WhatsApp -->
+            <div class="space-y-2 pt-2">
+              <button onclick="sendOrderToWhatsApp()" class="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                Kirim Rincian Pesanan ke WhatsApp Pak Ridwan
+              </button>
+
+              <button onclick="openProformaInvoiceModal()" class="w-full py-2.5 px-4 bg-white hover:bg-amber-50 text-amber-900 border border-amber-300 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2">
+                <i data-lucide="printer" class="w-3.5 h-3.5 text-amber-800"></i>
+                Cetak / Simpan Proforma Invoice Resmi
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FITUR 6 DETAIL: TIMELINE PELACAKAN & ALUR ESTIMASI SAMPAI -->
+  <section id="estimasi-info" class="py-16 bg-rattan-50 border-t border-amber-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-amber-800 uppercase tracking-widest">TRANSPARANSI LOGISTIK EKSPOR</span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-serif-luxury text-amber-950 mt-1">
+          Tahapan Perjalanan Ekspor: Dari Bengkel Cirebon ke Pelabuhan Klien
+        </h2>
+        <p class="text-xs text-gray-500 mt-2">
+          Pak Ridwan memastikan setiap tahapan tervalidasi agar klien mengetahui posisi dan estimasi barang secara pasti.
+        </p>
+      </div>
+
+      <!-- 5-Step Process Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <!-- Step 1 -->
+        <div class="p-4 bg-white rounded-2xl border border-amber-200/80 shadow-sm relative">
+          <div class="w-8 h-8 rounded-full bg-amber-800 text-white font-bold text-xs flex items-center justify-center mb-3">
+            01
+          </div>
+          <h4 class="font-bold text-xs text-gray-900 mb-1">Quality Control & Oven</h4>
+          <p class="text-[11px] text-gray-500 leading-relaxed">Pemeriksaan kelembaban rotan (MC &lt; 12%) dan uji kekuatan sambungan.</p>
+          <span class="text-[10px] text-amber-800 font-semibold block mt-3">Hari ke 1 - 2</span>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-4 bg-white rounded-2xl border border-amber-200/80 shadow-sm relative">
+          <div class="w-8 h-8 rounded-full bg-amber-800 text-white font-bold text-xs flex items-center justify-center mb-3">
+            02
+          </div>
+          <h4 class="font-bold text-xs text-gray-900 mb-1">Packing 5-Ply & Fumigasi</h4>
+          <p class="text-[11px] text-gray-500 leading-relaxed">Pengemasan bubble, kardus 5 lapis dan perlakuan gas fumigasi standar AFAS.</p>
+          <span class="text-[10px] text-amber-800 font-semibold block mt-3">Hari ke 3 - 4</span>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-4 bg-white rounded-2xl border border-amber-200/80 shadow-sm relative">
+          <div class="w-8 h-8 rounded-full bg-amber-800 text-white font-bold text-xs flex items-center justify-center mb-3">
+            03
+          </div>
+          <h4 class="font-bold text-xs text-gray-900 mb-1">Trucking ke Tanjung Priok</h4>
+          <p class="text-[11px] text-gray-500 leading-relaxed">Kontainer diangkut truk dari Cirebon ke pelabuhan muat Jakarta (IDJKT).</p>
+          <span class="text-[10px] text-amber-800 font-semibold block mt-3">Hari ke 5</span>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-4 bg-white rounded-2xl border border-amber-200/80 shadow-sm relative">
+          <div class="w-8 h-8 rounded-full bg-amber-800 text-white font-bold text-xs flex items-center justify-center mb-3">
+            04
+          </div>
+          <h4 class="font-bold text-xs text-gray-900 mb-1">Pelayaran Laut (Transit)</h4>
+          <p class="text-[11px] text-gray-500 leading-relaxed">Kapal berlayar sesuai rute. Pembeli menerima tracking B/L nomor kontainer.</p>
+          <span class="text-[10px] text-amber-800 font-semibold block mt-3">3 - 35 Hari Transit</span>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-300 shadow-sm relative">
+          <div class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold text-xs flex items-center justify-center mb-3">
+            05
+          </div>
+          <h4 class="font-bold text-xs text-emerald-950 mb-1">Tiba di Pelabuhan Klien</h4>
+          <p class="text-[11px] text-emerald-800/80 leading-relaxed">Pembersihan bea cukai pelabuhan tujuan dengan sertifikat V-Legal & Phyto.</p>
+          <span class="text-[10px] text-emerald-700 font-bold block mt-3">✓ Tiba Sesuai ETA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR 7: FAQ (PERTANYAAN YANG SERING DIAJUKAN) -->
+  <section id="faq" class="py-20 bg-white border-t border-amber-200/60">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <span class="px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider">
+          Pusat Bantuan & FAQ Ekspor
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif-luxury text-amber-950 mt-2 mb-3">
+          Pertanyaan yang Paling Sering Diajukan Calon Klien
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-600 max-w-xl mx-auto leading-relaxed">
+          Temukan jawaban langsung mengenai ketersediaan stok, varian, MOQ, sistem pembayaran, perhitungan biaya kirim, dan sertifikat fumigasi ekspor Pak Ridwan.
+        </p>
+
+        <!-- FAQ Search -->
+        <div class="relative max-w-md mx-auto mt-6">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          <input type="text" id="faq-search-input" placeholder="Ketik kata kunci: MOQ, SVLK, DP, Ongkir, Waktu..." class="w-full pl-10 pr-4 py-2.5 bg-rattan-50 border border-amber-200 rounded-xl text-xs focus:ring-2 focus:ring-amber-600 focus:outline-none">
+        </div>
+      </div>
+
+      <!-- FAQ Category Tabs -->
+      <div class="flex items-center justify-center gap-1.5 flex-wrap mb-8">
+        <button data-faq-cat="all" class="faq-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-800 text-white transition">
+          Semua Topik
+        </button>
+        <button data-faq-cat="ketersediaan" class="faq-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-700 border border-gray-200 hover:bg-amber-50 transition">
+          Stok & Ready
+        </button>
+        <button data-faq-cat="harga" class="faq-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-700 border border-gray-200 hover:bg-amber-50 transition">
+          Harga & Diskon
+        </button>
+        <button data-faq-cat="pengiriman" class="faq-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-700 border border-gray-200 hover:bg-amber-50 transition">
+          Ongkir & Port
+        </button>
+        <button data-faq-cat="estimasi" class="faq-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-700 border border-gray-200 hover:bg-amber-50 transition">
+          Estimasi Waktu (ETA)
+        </button>
+        <button data-faq-cat="legalitas" class="faq-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-gray-700 border border-gray-200 hover:bg-amber-50 transition">
+          Legalitas & Fumigasi
+        </button>
+      </div>
+
+      <!-- FAQ Accordion Container (Rendered by app.js) -->
+      <div id="faq-accordion-container" class="space-y-3">
+        <!-- Dynamic Accordion Items -->
+      </div>
+
+      <!-- Still Have Questions Box -->
+      <div class="mt-12 p-6 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-200 text-center space-y-3">
+        <h4 class="font-bold text-sm text-amber-950">Punya Pertanyaan Khusus Terkait Proyek Anda?</h4>
+        <p class="text-xs text-gray-600 max-w-md mx-auto">
+          Pak Ridwan dan tim teknis ekspor kami siap berkonsultasi via WhatsApp atau panggilan video langsung dari showroom Tegalwangi.
+        </p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Pak%20Ridwan,%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20rotan%20ekspor" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Tanya Langsung ke WhatsApp Pak Ridwan
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS & GLOBAL EXPORT FOOTPRINT -->
+  <section class="py-20 bg-rattan-pattern border-t border-amber-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-amber-800 uppercase tracking-widest">REPUTASI EKSPOR INTERNASIONAL</span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-serif-luxury text-amber-950 mt-1">
+          Dipercaya Pembeli Grosir & Resort di Berbagai Benua
+        </h2>
+        <p class="text-xs text-gray-500 mt-2">
+          Ulasan otentik dari jaringan importir furnitur di Jerman, Jepang, Australia, dan Amerika Serikat.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid (Rendered by app.js) -->
+      <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <!-- Dynamic Testimonials -->
+      </div>
+
+      <!-- Export Destination Countries Pill Showcase -->
+      <div class="p-6 bg-white rounded-2xl border border-amber-200/80 shadow-sm text-center">
+        <span class="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-3">Destinasi Utama Ekspor Kontainer Cirebon Rattan:</span>
+        <div class="flex items-center justify-center gap-2 flex-wrap text-xs font-bold text-gray-700">
+          <span class="px-3.5 py-1 bg-amber-100 text-amber-950 font-black rounded-full border-2 border-amber-400 shadow-sm">🇲🇾 Malaysia (Port Klang, Penang & Johor)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇸🇬 Singapore (PSA Port)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇺🇸 United States (LA & NY)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇩🇪 Germany (Hamburg)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇳🇱 Netherlands (Rotterdam)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇯🇵 Japan (Tokyo & Osaka)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇦🇺 Australia (Sydney & Melb)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇦🇪 United Arab Emirates (Dubai)</span>
+          <span class="px-3 py-1 bg-amber-50 rounded-full border border-amber-200">🇮🇩 Domestik Indonesia</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-rattan-950 text-amber-100/90 pt-16 pb-12 border-t-2 border-amber-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-rattan-800">
+        
+        <!-- Brand Info (5 Cols) -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-700 flex items-center justify-center text-amber-200 shadow">
+              <i data-lucide="palmtree" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="font-serif-luxury font-bold text-xl text-white">Cirebon Rattan Heritage</span>
+              <p class="text-[11px] text-amber-300">CV. Ridwan Rattan Nusantara</p>
+            </div>
+          </div>
+          <p class="text-xs text-amber-200/70 leading-relaxed max-w-sm">
+            Eksportir mebel rotan alami dan sintetis berkualitas tinggi berbasis di Cirebon. Spesialis penyuplai furnitur hotel, resort, cafe, dan residential di Malaysia (Langkawi, Penang, KL, Johor) dan global dengan fasilitas ATIGA Form D (Bea Masuk 0%) & standar karantina MAQIS.
+          </p>
+          <div class="text-xs text-amber-200/70 space-y-1">
+            <p><strong>Owner:</strong> Pak H. Ridwan Mansyur, S.T.</p>
+            <p><strong>Pabrik:</strong> Jl. Raya Tegalwangi No. 88, Weru, Cirebon, Jawa Barat</p>
+            <p><strong>Email Ekspor:</strong> export@cirebonrattan.id | <strong>WA:</strong> +62 812-3456-7890</p>
+          </div>
+        </div>
+
+        <!-- Fitur Wajib Nav (3 Cols) -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="font-bold text-sm text-white uppercase tracking-wider">Fitur Wajib Aplikasi</h4>
+          <ul class="text-xs space-y-2 text-amber-200/70">
+            <li><a href="#profil" class="hover:text-amber-400 transition">1. Publikasi Bisnis Pak Ridwan</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition">2. Ketersediaan Produk (Ready/PO)</a></li>
+            <li><a href="#katalog" class="hover:text-amber-400 transition">3. Pilihan Varian Produk</a></li>
+            <li><a href="#kalkulator" class="hover:text-amber-400 transition">4. Total Harga & Diskon Volume</a></li>
+            <li><a href="#kalkulator" class="hover:text-amber-400 transition">5. Biaya Pengiriman (Ongkir Port)</a></li>
+            <li><a href="#estimasi-info" class="hover:text-amber-400 transition">6. Estimasi Sampai (ETA Kalender)</a></li>
+            <li><a href="#faq" class="hover:text-amber-400 transition">7. Pertanyaan Klien (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Student PPLG Identity (4 Cols) -->
+        <div class="md:col-span-4 p-5 rounded-2xl bg-rattan-900/80 border border-rattan-800 space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded text-[10px] font-bold border border-amber-500/40">
+              IDENTITAS PROJEK SEKOLAH
+            </span>
+          </div>
+          <h4 class="font-bold text-sm text-white">Tugas Asesmen Sumatif Akhir Semester (ASAS)</h4>
+          <p class="text-xs text-amber-200/70 leading-relaxed">
+            Projek pembuatan website solusi kendala calon klien ekspor rotan Pak Ridwan di Cirebon. Dikerjakan oleh siswa konsentrasi keahlian <strong>PPLG (Pengembangan Perangkat Lunak dan Gim)</strong>.
+          </p>
+          <div class="pt-2 border-t border-rattan-800 text-[11px] text-amber-300/80 flex items-center justify-between">
+            <span>Kurikulum Merdeka SMK</span>
+            <span class="font-bold text-emerald-400">Status: Selesai 100%</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Disclaimer -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-amber-200/50 gap-4">
+        <p>© 2026 Cirebon Rattan Heritage (Pak Ridwan). Hak Cipta Dilindungi Undang-Undang.</p>
+        <div class="flex items-center gap-4">
+          <a href="#hero" class="hover:text-amber-300 transition">Kembali ke Atas ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MODAL 1: DETAIL PRODUK & PEMILIH VARIAN (Fitur 3: Varian) -->
+  <div id="product-detail-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl border-2 border-amber-300 max-w-4xl w-full p-6 sm:p-8 shadow-2xl relative my-8 animate-fade-in">
+      <!-- Close Button -->
+      <button onclick="closeProductDetailModal()" class="absolute top-4 right-4 p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Content rendered by app.js -->
+      <div id="modal-product-content">
+        <!-- Dynamic Product Detail Content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: CETAK PROFORMA INVOICE / EXPORT QUOTATION -->
+  <div id="invoice-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-4xl w-full p-6 sm:p-8 shadow-2xl relative my-8 text-gray-900 border border-amber-300">
+      
+      <!-- Top Action Bar (No Print) -->
+      <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-200 no-print">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-1 bg-amber-100 text-amber-900 rounded font-bold text-xs">Preview Dokumen Ekspor</span>
+          <span class="text-xs text-gray-500">Siap Cetak / Simpan sebagai PDF</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="window.print()" class="px-4 py-2 bg-amber-800 hover:bg-amber-900 text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5 shadow">
+            <i data-lucide="printer" class="w-4 h-4"></i> Cetak / Simpan PDF
+          </button>
+          <button onclick="closeProformaInvoiceModal()" class="px-3 py-2 border border-gray-300 rounded-lg text-xs font-semibold hover:bg-gray-100 transition">
+            Tutup
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Document Container -->
+      <div id="printable-quotation">
+        <div id="invoice-printable-content">
+          <!-- Populated by calculator.js -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <div class="fixed bottom-6 right-6 z-40">
+    <a href="https://wa.me/6281234567890?text=Halo%20Pak%20Ridwan,%20saya%20ingin%20bertanya%20seputar%20produk%20rotan%20dan%20biaya%20ekspor" target="_blank" class="flex items-center gap-2.5 px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl hover:scale-105 transition duration-300 border-2 border-white">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+      <span class="text-xs font-bold hidden sm:inline">WhatsApp Pak Ridwan</span>
+    </a>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container"></div>
+
+  <!-- App Scripts -->
+  <script src="data.js"></script>
+  <script src="calculator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
